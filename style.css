@@ -4,11 +4,6 @@
 }
 
 
-.material-icons-outlined {
-
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -96,11 +91,6 @@ input >
         border-radius: 10%;
         
       }
-}
-.search-container {
-  
-}
-
 img {
     display: block;
     margin-left: auto;
@@ -142,7 +132,7 @@ img {
 
 }
 
-.buttons: {
+.buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
