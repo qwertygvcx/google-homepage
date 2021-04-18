@@ -3,6 +3,12 @@
     --main-gray: #999999;
 }
 
+
+.material-icons-outlined {
+
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +33,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans';
+    font-family: 'Arial';
     src:"https://fonts.google.com/specimen/Open+Sans";
     font-size: 1.8rem;
     font-weight: 300;
@@ -48,6 +54,51 @@ ul {
     width: 100%;
     background: var(--main-white);
     z-index: 10;
+    overflow: hidden;
+}
+
+
+form {
+    background-color: whitesmoke;
+    width: 400px;
+    height: 50px;
+    border-radius: 6px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+
+}
+
+input {
+    all: unset;
+    font: 20px Arial;
+    color: gray;
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 45%;
+
+}
+
+input >
+    button {
+        all: unset;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        border-radius: 10%;
+      }
+      
+      svg {
+        fill: white;
+        width: 44px;
+        height: 44px;
+        border-radius: 10%;
+        
+      }
+}
+.search-container {
+  
 }
 
 img {
@@ -98,4 +149,26 @@ img {
     justify-content: space-evenly;
     margin: auto;
     padding: 2em;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    z-index: 10;
+}
+
+.footer-list {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.footer-list p {
+    display: block;
+    font-size: 1.4rem;
+    padding: 1rem;
 }
