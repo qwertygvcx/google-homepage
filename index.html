@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang='English' class=''>
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
     <title>Google</title>
+
 
 </head>
 
@@ -27,23 +33,39 @@
     <img
     src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
     <section id="main" class="main">             
-    
-        <div id="Search_bar" class="Search_bar">What are you looking for?</div>
-            <input class="input" maxlength="2000" name="Search_bar" type="text">
-                <container id="buttons" class="buttons">
+        <div class="search-container">
+            <form id="form" role="search">
+                <input id="input" class="input" name="Search_bar" type="search" placeholder="What are you looking for?" 
+                aria-label="Searching">
+                <button><svg viewBox="0 0 1024 1024"><path class="path1" 
+                    d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 
+                    79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+                </form>
+            </div>
+               
+            <div id="buttons" class="buttons">
                     <button id="search_button">Google Search</button>
                     <button id="rng_button">I'm feeling lucky</button>
-                </container>
+            </div>
+        
                             <h6>Google offered in English</h6>
     </section>
 </Body>
 
 
 <footer>
-    <div>
+    <div id="footer" class="footer">
+        <ul id="footer-list" class="footer-list">
+            <li>
         <p>About</p>
+            </li>
+            <li>
         <p>Advertising</p>
+        </li>
+        <li>
         <p>Business</p>
+        </li>
+    </ul>
     </div>
 </footer>
 
