@@ -43,11 +43,11 @@ ul {
 .nav {
     display: flex;
     justify-content: flex-end;
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-white);
+    background: white;
     z-index: 10;
     overflow: hidden;
 }
@@ -77,19 +77,24 @@ input {
 
 input >
     button {
-        all: unset;
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
         cursor: pointer;
-        width: 44px;
-        height: 44px;
-        border-radius: 10%;
       }
       
       svg {
-        fill: white;
-        width: 44px;
-        height: 44px;
-        border-radius: 10%;
-        
+        fill: gray;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+       
+
       }
 img {
     display: block;
@@ -108,7 +113,7 @@ img {
 
 .nav-list p {
     display: block;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     padding: 1.2rem;
 
 }
@@ -132,14 +137,26 @@ img {
 
 }
 
-.buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+.buttons-container {
+    display: block;
+    height: 2em;
+    flex-direction: row;
     margin: auto;
-    padding: 2em;
+    padding: 40px;
+    align-self: auto;
+    flex-flow: row wrap;
+
 }
+
+.hero {
+    padding: 0.5em;
+    align-items: flex-start;
+    position: relative;
+    margin: 10px;
+    height: 1em;
+    width: auto;
+    padding: 5 20px;
+    }
 
 .footer {
     display: flex;
