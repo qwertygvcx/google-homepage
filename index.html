@@ -1,72 +1,79 @@
 <!DOCTYPE html>
-<html lang='English' class=''>
+<html lang='en' class=''>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="content-security-policy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" href="style.css">
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" >
+    <link rel="stylesheet" href="img/"
     <title>Google</title>
-
-
 </head>
 
-<header id="header" class="header">
-    <nav id="navbar" class="nav">
-        <ul class="nav-list">
-            <li>
-            <p id="Gmail">Gmail</p> 
-            </li>
-            <li>
-        <p id="Images">Images</p>
-        </li>
-        <li>
-    <p id="More">More</p>
-    </li>
-</ul>
-</nav>
+<body>
+        <header id="header" class="header">
+            <nav id="navbar" class="nav">
+                <div id="misc" class="misc">
+                    <a href="#">About</a>
+                    <a href="#">Store</a>
+                </div>
+            
+                <div id="nav-list" class="nav-list">
+                    <a href="#">Gmail</a> 
+                    <a href="#">Images</a>
+                    <a href="#">More</a>
+                    <a href="#"><div onclick="myMenu()" class="menu-gsprite"></div></a>
+                    <a href="#" id="login"><div></div></a>
+                </div>
+            </nav>
+        </header>
+<main>
+    <div>
 
-</header>
-
-<Body>
-    <img
-    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
-    <section id="main" class="main">             
-        <div class="search-container">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="googlelogo">
+    </div>
+            <div class="search-container">
             <form id="form" role="search">
-                <input id="input" class="input" name="Search_bar" type="search" placeholder="What are you looking for?" 
+                <div class="search_icon gsprite"></div>
+                <input id="search" class="search" name="Search_bar" type="search" placeholder="What are you looking for?" 
                 aria-label="Searching">
-                <button><svg viewBox="0 0 1024 1024"><path class="path1" 
-                    d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 
-                    79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
-                </form>
-            </div>
-               
-            <div id="buttons-container" class="buttons-container">
-                    <button id="search_button" class="hero">Google Search</button>
-                    <button id="rng_button" class="hero">I'm feeling lucky</button>
-            </div>
-        
-                            <h6>Google offered in English</h6>
-    </section>
-</Body>
+                <div id="buttons-container" class="buttons-container">
+                    <a><div id="search_button" class="hero">Google Search</div></a>
+                    <a><div id="rng_button" class="hero">I'm feeling lucky</div></a>
+                </div>
+            </form>
+        </div>
+    <div id="lang-sel" class="lang-sel">
+        <h6>Google offered in <a href="#">English</a></h6>
+    </div>
+</main>
 
 
 <footer>
-    <div id="footer" class="footer">
-        <ul id="footer-list" class="footer-list">
-            <li>
-        <p>About</p>
-            </li>
-            <li>
-        <p>Advertising</p>
-        </li>
-        <li>
-        <p>Business</p>
-        </li>
-    </ul>
+    <div id="footer-left" class="footer-left">
+        <a href="#">About</a>
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
     </div>
-</footer>
-
+    <div id="footer-right" class="footer-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+    </div>
+    </footer>
+    <script>
+        function myMenu() {
+            var x = document.getElementById("popup");
+            if (x.style.display === "none") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</Body>
 </html>
